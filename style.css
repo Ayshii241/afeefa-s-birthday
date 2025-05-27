@@ -1,0 +1,232 @@
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* clicks pass through */
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  color: white;
+  user-select: none;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 15px gold;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.typewriter {
+  font-size: 1.2rem;
+  color: #0ff;
+  border-right: 2px solid #0ff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  margin: 0 auto 20px auto;
+  max-width: 400px;
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.countdown {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: yellow;
+}
+
+/* Hero videos */
+.hero-videos {
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.hero-videos video {
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff00cc, 0 0 30px #00ffff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background: black;
+}
+
+.hero-videos video:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ff00cc, 0 0 45px #00ffff;
+}
+
+/* Buttons */
+button {
+  background: #ff00cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background: #e600b8;
+}
+
+.scrollBtn {
+  background: #00ffff;
+  color: black;
+  margin-left: 10px;
+}
+
+/* Gallery */
+.gallery {
+  padding: 40px 20px;
+  background: #111;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #ff00cc;
+  text-shadow: 0 0 8px #ff00cc;
+}
+
+.photos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photos img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff00cc;
+}
+
+/* Wish Wall */
+.wish-wall {
+  padding: 40px 20px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.wish-wall h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+#wishList p {
+  background: #222;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 8px #ff00cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background: #111;
+  color: #888;
+  font-size: 1rem;
+  user-select: none;
+  border-top: 1px solid #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-videos {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .photos img {
+    width: 90vw;
+  }
+  form {
+    width: 90vw;
+  }
+}

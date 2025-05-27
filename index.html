@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Afeefa!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Confetti Background Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>🎉 Happy Birthday Afeefa 🎉</h1>
+    <p class="tagline">My Cousin, Crime Partner & Bestie!</p>
+    <p class="quote">"From silly secrets to endless laughter – you're simply irreplaceable 💜"</p>
+    <p class="typewriter" id="typedMessage"></p>
+    <div class="countdown" id="countdown"></div>
+
+    <!-- Videos on Hero Page -->
+    <div class="hero-videos">
+      <video controls width="280" preload="metadata" poster="video1-poster.jpg">
+        <source src="/vedios/vedio 1 (3).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls width="280" preload="metadata" poster="video2-poster.jpg">
+        <source src="/vedios/vedio 2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls width="280" preload="metadata" poster="video3-poster.jpg">
+        <source src="/vedios/vedio 3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <button id="musicToggle">🔊 Play Music</button>
+    <button class="scrollBtn" onclick="document.querySelector('.gallery').scrollIntoView({ behavior: 'smooth' });">🎈 View Memories</button>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="gallery">
+    <h2>📸 Crazy Memories</h2>
+    <div class="photos">
+      <img src="/imgs/picture 1.jpeg"alt="Memory 1" />
+      <img src="/imgs/picture 10.jpeg" alt="Memory 2" />
+      <img src="/imgs/picture 11.jpeg" alt="Memory 3" />
+      <img src="/imgs/picture 12.jpeg" alt="Memory 4" />
+      <img src="/imgs/picture 13.jpeg" alt="Memory 5" />
+      <img src="/imgs/picture 14.jpeg" alt="Memory 6" />
+      <img src="/imgs/picture 2.jpeg" alt="Memory 7" />
+      <img src="/imgs/picture 3.jpeg" alt="Memory 8" />
+      <img src="/imgs/picture 4.jpeg" alt="Memory 9" />
+      <img src="/imgs/picture 5.jpeg" alt="Memory 10" />
+      <img src="/imgs/picture 7.jpeg" alt="Memory 11" />
+      <img src="/imgs/picture 8.jpeg" alt="Memory 12" />
+      <img src="/imgs/picture 9.jpeg" alt="Memory 13" />
+      <img src="/imgs/pictuure 6.jpeg" alt="Memory 14" />
+    </div>
+  </section>
+
+  <!-- Wish Wall Section -->
+  <section class="wish-wall">
+    <h2>💌 Leave a Birthday Wish</h2>
+    <form id="wishForm">
+      <input type="text" placeholder="Your Name" required />
+      <textarea placeholder="Your Wish" required></textarea>
+      <button type="submit">Send Wish</button>
+    </form>
+    <div id="wishList"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Made with 💖 by Ayesha for the one and only you Afeefa
+  </footer>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="/songs/birthday_song.mp3"type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
